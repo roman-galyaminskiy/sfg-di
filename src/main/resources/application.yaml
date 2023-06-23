@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: EN,dev
+
+ds:
+  user: user
+  password: password
+  url: someurl
