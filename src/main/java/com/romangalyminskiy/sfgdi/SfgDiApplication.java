@@ -1,5 +1,6 @@
 package com.romangalyminskiy.sfgdi;
 
+import com.romangalyminskiy.sfgdi.config.SfgConfiguration;
 import com.romangalyminskiy.sfgdi.datasource.FakeDataSource;
 import com.romangalyminskiy.sfgdi.services.PrototypeBean;
 import com.romangalyminskiy.sfgdi.services.SingletonBean;
@@ -43,5 +44,10 @@ public class SfgDiApplication {
 		System.out.println(fakeDataSource.getUrl());
 		System.out.println(fakeDataSource.getUser());
 		System.out.println(fakeDataSource.getPassword());
+
+		SfgConfiguration sfgConfiguration = (SfgConfiguration) ctx.getBean("sfgConfiguration");
+		System.out.println(sfgConfiguration.getUrl());
+		System.out.println(sfgConfiguration.getUser());
+		System.out.println(sfgConfiguration.getPassword());
 	}
 }

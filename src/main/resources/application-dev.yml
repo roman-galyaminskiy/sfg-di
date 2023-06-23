@@ -1,0 +1,4 @@
+ds:
+  user: dev_user
+  password: dev_password
+  url: dev_someurl

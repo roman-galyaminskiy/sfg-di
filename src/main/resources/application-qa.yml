@@ -1,0 +1,4 @@
+ds:
+  user: qa-user
+  password: qa-password
+  url: qa-someurl

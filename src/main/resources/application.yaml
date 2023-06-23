@@ -1,8 +1,18 @@
 spring:
   profiles:
-    active: EN,dev
+    active:
+      - EN
+      - prod
 
 ds:
   user: user
   password: password
   url: someurl
+
+---
+spring:
+  profile: prod
+ds:
+  user: prod_user
+  password: prod_password
+  url: prod_someurl
